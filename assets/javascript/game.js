@@ -8,6 +8,12 @@ var score = 0;
 var gameStartAndReset = function () {                          //function to restart the game
     
     $(".crystals").empty();
+
+    var images = [
+            'https://i.pinimg.com/originals/7a/1e/8c/7a1e8cbae81363b96096b4c5d0971705.png',
+            'https://cdn140.picsart.com/239521915022212.png?r1024x1024',
+            'https://img.pngmix.com/pm/crystals/crystals_003.png',
+            'https://img.pngmix.com/pm/th/200x200/crystals/crystals_001.png']
     // a new randomNum between 19-120 is generated at the beginning of each round
     randomNum = Math.floor(Math.random() * 102) + 19;
     $("#randomWinningNumber").html('Your goal: ' + randomNum); //displaying the random number on HTML
@@ -19,9 +25,15 @@ var gameStartAndReset = function () {                          //function to res
         var crystal = $("<div>");
             crystal.attr({
                 "class": 'crystal',
-                "data-random-number": random
+                "data-random-number": random,
             });
-            crystal.html(random); // to see the crystal values - REMOVE WHEN DONE
+            crystal.css({
+                "background-image":"url('" + images[i] + "')", // ask about this <---------
+                "background-size":"contain",
+                "background-position":"center",
+                "background-repeat":"no-repeat",
+            });
+            // crystal.html(random); // to see the crystal values - REMOVE WHEN DONE
         $(".crystals").append(crystal);
     }
 
