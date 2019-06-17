@@ -1,6 +1,28 @@
-img{
-    /* width: 152px; */
-    /* height: 152px; */
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: goldenrod;
+}
+
+body{
+    background-image: url('http://www.zingerbug.com/Backgrounds/background_images/indigo_textured_rock_seamless_pattern.jpg');
+    /* background-size: 20%; */
+    background-repeat: repeat;
+}
+
+p{
+    background: antiquewhite;
+    border: 1px solid goldenrod;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 30px 30px 30px;
+}
+
+h1{
+    background: antiquewhite;
+    text-align: center;
+    border: 1px solid goldenrod;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 30px 30px 30px;
 }
 
 .crystals{
@@ -16,6 +38,7 @@ img{
     border-radius: 100% 0px 100% 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: box-shadow 1s;
+    background-color: antiquewhite;
 }
 
 .crystal:hover{
@@ -27,4 +50,32 @@ img{
 .crystal:active{
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5); 
     transition: box-shadow 0.3s;
+}
+
+.winsLosses{
+    border: 1px solid goldenrod;
+    width: 85px;
+    height: 60px;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 30px 30px 30px;
+    margin: 0px auto;
+}
+
+.winsloss{
+    justify-content: space-around;
+    display: inline-block;
+    padding: 10px;
+}
+
+.randomNumAndScore{
+    border: 1px solid goldenrod;
+    width: 105px;
+    height: 40px;
+    padding: 8px;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30px 30px 30px 30px;
 }

@@ -12,16 +12,23 @@
 </head>
 <body>
     <h1>Crystal Collector</h1>
-    <p>You are given a random number at the start of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. You win the game by matching your total score to the random number that was generated at the start of the game. The value of each gem is hidden from you. All numbers are reset after each round.</p>
+    <p>A random number is generated at the beginning of the game. Each of the four crystals below is assigned a random value. Clicking on a crystal adds that crystal's value to your score. You win the game by matching your total score to the random number that was generated at the start of the game. You lose if your score goes over that number. The value of each gem is hidden from you. All numbers are reset after each round.</p>
 
-    <p id="randomWinningNumber"></p>
-
-   <span>Wins: </span><span id="wins">0</span><br>
-   <span>Losses: </span><span id="losses">0</span><br>
+    <div class="randomNumAndScore">
+        <span id="randomWinningNumber"></span><br>
+        <span>Score: </span><span id="score">0</span>
+    </div><br>
 
     <br><div class="crystals"></div><br>
 
-    <span>Score: </span><span id="score">0</span>
+    <div class="winsLosses">
+        <span class="winsloss">
+            <span>Wins: </span><span id="wins">0</span><br>
+            <span>Losses: </span><span id="losses">0</span><br>
+        </span>
+    </div>
+
+    
 
     
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
